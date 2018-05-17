@@ -1,0 +1,68 @@
+.page_row
+{
+  display:flex;
+  flex-direction:row;
+  background:#C9C9CE;
+  height:40px;
+}
+.search
+{
+  width:97%;
+}
+.df
+{
+  display:flex;
+  flex-direction:row;
+  margin-top:6px;
+}
+.search_arr
+{
+  border:1px solid #fff;
+  border-radius:5rpx;
+  margin-left:20rpx;
+  background:#fff;
+}
+.searchcion
+{
+  margin:10rpx 10rpx 10rpx 10rpx;
+  position:absolute;
+  left:35rpx;
+  z-index:2;
+  width:20px;
+  height:20px;
+  text-align:center;
+}
+.pro_input
+{
+  margin-left:32px;
+}
+.pg_container
+{
+  display:flex;
+  flex-direction:row;
+  height:50px;
+
+}
+.pg_item
+{
+  width:33.33%;
+  background:white;
+  color:#E94448;
+  text-align:center;
+  border-radius:0rpx;
+}
+.pro_patient
+{
+  display:flex;
+  height:80px;
+  border:0.2px solid #f3f3f3;
+}
+.pro-left
+{
+ float:left;
+ margin-top:15px;
+}
+.pro-right
+{
+  margin-left:10px;
+}

@@ -1,0 +1,58 @@
+<view class="flex item"  style="background:#E94448">
+    <view class="item-left">
+        <image mode="aspectFill" src="../../images/doctor.png" style="width:60px;height:60px"></image>
+    </view>
+    <view class="item-middle">
+        <view><text class="title">{{name}}</text></view>
+        <view><text class="title">{{projectType}}患者援助项目</text></view>
+        <view><button class="button" bindtap="changePage">点击编辑个人信息</button></view>
+    </view>
+</view>
+<view style="background:#E94448">
+    <view class="countStyle">
+        <view><text>{{totalPeople}}</text></view>
+        <view>患者总数量</view>
+    </view>
+    <view class="countStyle">
+        <view><text>{{totalVisit}}</text></view>
+        <view>随访总次数</view>
+    </view>
+    <view class="countStyle">
+        <view><text>{{recommendPeople}}</text></view>
+        <view>推荐患者数</view>
+    </view>
+    <view class="countStyle">
+        <view><text>{{totalMed}}</text></view>
+        <view>领药总数</view>
+    </view>
+</view>
+<view class="mine-list">
+    <view bindtap="breakCountAction" class="everyColumn">
+        <image src="../../images/rule.png" style="width:30px;height:30px;margin-top:10px;margin-left:10px"></image>
+        <text style="padding:15px;">违规统计</text>
+        <image src="../../images/right-arrow.png" class="absolute-center-Y img-small-icon img-right-20"></image>
+    </view>
+    <view bindtap="myPatientAction" class="everyColumn">
+        <image src="../../images/patient.png" style="width:30px;height:30px;margin-top:10px;;margin-left:10px"></image>
+        <text style="padding:15px;">我的患者</text>
+        <image src="../../images/right-arrow.png" class="absolute-center-Y img-small-icon img-right-20"></image>
+    </view>
+    <view bindtap="generalQustionAction" class="everyColumn">
+        <image src="../../images/question.png" style="width:30px;height:30px;margin-top:10px;;margin-left:10px"></image>
+        <text style="padding:15px;">常见问题</text>
+        <image src="../../images/right-arrow.png" class="absolute-center-Y img-small-icon img-right-20"></image>
+    </view>
+    <view bindtap="contactUsAction" class="everyColumn">
+        <image src="../../images/contact.png" style="width:30px;height:30px;margin-top:10px;;margin-left:10px"></image>
+        <text style="padding:15px;">联系我们</text>
+        <image src="../../images/right-arrow.png" class="absolute-center-Y img-small-icon img-right-20"></image>
+    </view>
+    <view bindtap="changePwdAction" class="everyColumn">
+        <image src="../../images/change.png" style="width:30px;height:30px;margin-top:10px;;margin-left:10px"></image>
+        <text style="padding:15px;">修改密码</text>
+        <image src="../../images/right-arrow.png" class="absolute-center-Y img-small-icon img-right-20"></image>
+    </view>
+</view>
+<view style="margin-top:20px;width:320px;margin-left:25px;">
+    <button type="warn" style="padding:4px;" bindtap="exitCurrentAccount">退出当前账号</button>
+</view>

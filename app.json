@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/message/message",
+    "pages/visit/visit",
+    "pages/mine/mine",
+    "pages/editInfo/editInfo",
+    "pages/visitDetail/visitDetail",
+    "pages/medicalDetail/medicalDetail",
+    "pages/mine/changePwd/changePwd",
+    "pages/mine/contactUS/contactUS",
+    "pages/mine/generalQustion/generalQustion",
+    "pages/mine/myPatient/myPatient",
+    "pages/mine/breakCount/breakCount"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#E94448",
+    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTextStyle":"#ffffff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar":{
+    "color": "gray",
+    "selectedColor":"red",
+    "backgroundColor":"#ffffff",
+    "borderStyle":"black",
+    "list":[
+      {
+        "pagePath":"pages/message/message",
+        "text":"消息",
+        "iconPath":"images/message.png",
+        "selectedIconPath":"images/message_selected.png"
+      },
+      {
+        "pagePath": "pages/visit/visit",
+        "text": "随访",
+        "iconPath":"images/visit.png",
+        "selectedIconPath":"images/visit_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath":"images/mine_select.png",
+        "selectedIconPath":"images/mine.png"
+      }
+    ]
+  }
+}

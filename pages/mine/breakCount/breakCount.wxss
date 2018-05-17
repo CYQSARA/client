@@ -1,0 +1,15 @@
+.pro_patient
+{
+  display:flex;
+  height:80px;
+  border:0.2px solid #f3f3f3;
+}
+.pro-left
+{
+ float:left;
+ margin-top:15px;
+}
+.pro-right
+{
+  margin-left:10px;
+}

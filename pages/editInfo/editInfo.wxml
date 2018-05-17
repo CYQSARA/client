@@ -1,0 +1,40 @@
+<view style="height:65px;display:flex;border-bottom: 0.2px solid #CDCCD0;">
+    <text class="textStyle">头像</text>
+    <image src="{{avatar}}" style="width:45px;height:45px;margin-top:10px;margin-left:230px;border-radius:22.5px" bindtap="changeAvator"></image>
+    <image src="../../images/right-arrow.png" class="absolute-center-Y img-small-icon img-right-20;"></image>
+</view>
+<view class="mine-list">
+    <view class="everyColumn">
+        <text class="textStyle">所属医院</text>
+        <text style="margin-left:180px;height:30px;margin-top:18px;color:gray;font-size:14px;">{{hospital}}</text>
+    </view>
+    <view class="everyColumn">
+        <text class="textStyle">科室</text>
+        <text style="margin-left:180px;height:30px;margin-top:18px;color:gray;font-size:14px">{{department}}</text>
+    </view>
+    <view class="everyColumn">
+        <text class="textStyle">职称</text>
+        <text style="margin-left:170px;height:30px;margin-top:18px;color:gray;font-size:14px;">{{jobTitle}}</text>
+        <image src="../../images/right-arrow.png" class="absolute-center-Y img-small-icon img-right-20;"></image>
+    </view>
+    <view class="everyColumn">
+        <text class="textStyle">职务</text>
+        <text style="margin-left:170px;height:30px;margin-top:18px;color:gray;font-size:14px;">{{jobBusiness}}</text>
+        <image src="../../images/right-arrow.png" class="absolute-center-Y img-small-icon img-right-20;"></image>
+    </view>
+</view>
+<view class="mine-list">
+    <view class="everyColumn">
+        <text class="textStyle">治疗领域</text>
+        <text style="margin-left:170px;height:30px;margin-top:18px;color:gray;font-size:14px;">{{major}}</text>
+    </view>
+    <view>
+        <text class="textStyle">个人简介</text>
+    </view>
+    <view>
+        <textarea style="margin-left:15px;" placeholder="请输入您的个人简介"/>
+    </view>
+</view>
+<view>
+    <button style="border-radius:20px;background:#E94448;height:45px;width:180px;align-items:center;color:white;" bindtap="save">保存</button>
+</view>

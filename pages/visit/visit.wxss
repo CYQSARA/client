@@ -1,0 +1,67 @@
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #CDCCD0;
+    text-align: center;
+    line-height: 80rpx;}
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+    width: 33.33%;
+    color: gray;
+}
+.on
+{
+    color: red;
+    border-bottom: 5rpx solid red;
+}
+
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box view{
+    text-align: center;
+}
+.flex
+{
+  display: flex;
+  width:300px;
+  height: 90px;
+}
+.item{
+  padding: 10px;
+  background-color: #fff;
+  color: #787878;
+  border-bottom: 1px solid  #CDCCD0;   /**下横线**/
+}
+.item image
+{
+  display: block;
+  overflow: hidden;
+  flex:1;
+}
+.item-middle
+{
+  flex:0;
+  margin-left:10px;
+  padding-top: 5px;
+  flex-grow:4;
+}
+.title
+{
+  font-size: 15px;
+  color:gray;
+  text-align:left;
+}
+.sub-title
+{
+  font-size: 12px;
+  color:gray;
+  margin: 2px;
+}
+.item-right
+{
+  height:140px;
+  width:100px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 14px;
+  line-height: 16px;
+}

@@ -1,0 +1,31 @@
+.absolute-center-Y {
+	position: absolute;
+	margin-top:25px;
+}
+.img-small-icon {
+    width: 25rpx;
+    height: 35rpx;
+}
+.img-right-20 {
+	right: 20rpx;
+}
+.textStyle
+{
+    margin-left:15px;
+    height:30px;
+    margin-top:18px;
+    text-align:left;
+    color:gray;
+    font-size:14px;
+    width:60px;
+}
+.mine-list{
+    display: block;
+    font-size:15px;
+}
+.everyColumn
+{
+    border-bottom: 0.2px solid  #CDCCD0;
+    display:flex;
+    height:60px
+}

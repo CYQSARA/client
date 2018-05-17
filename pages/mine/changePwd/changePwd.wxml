@@ -1,0 +1,8 @@
+<view style="background:#f3f3f3;width:375px;height:670px;margin:0px;">
+ <view class="pro_bd" style="margin-top:0px;"><input class="pro_text" placeholder="输入当前账号的密码"></input></view>
+ <view class="pro_bd"><input class="pro_text" placeholder="请设置6-12位数字与字母的组合"></input></view>
+ <view class="pro_bd"><input class="pro_text" placeholder="请设置6-12位数字与字母的组合"></input></view>
+ <view style="margin-top:20px;margin-left:25px;margin-right:25px;">
+     <button type="warn" style="padding:4px;" bindtap="savePwd">保存</button>
+ </view>
+</view>

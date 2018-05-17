@@ -1,0 +1,38 @@
+<swiper class="swiper_box" indicator-dots="{{indicatorDots}}"
+   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+   <block wx:for="{{imgUrls}}">
+       <swiper-item>
+           <image src="{{item}}"/>
+       </swiper-item>
+   </block>
+</swiper>
+<view class="container">
+  <scroll-view scroll-y="true" style="height:100%" >
+    <view wx:for="{{array}}" style="width:100%" class="flex item" data-gentle="{{item}}" bindtap="clickAndJump">
+      <view class="item-left">
+        <image id="{{index}}" mode="aspectFill" src="../../images/doctor.png" style="height:60px;width:60px;margin-top:20px"></image>
+      </view>
+      <view class="item-middle">
+        <view wx:if="{{item.category == 4}}">
+          <view><text class="actor">线上项目专用处方笺信息确认</text></view>
+          <view><text class="title">{{item.content}}</text></view>
+        </view>
+        <view wx:else>
+          <view><text class="title">{{item.content}}</text></view>
+          <view><text class="actor">{{item.related.project}}患者援助项目</text></view>
+        </view>
+        <view wx:if="{{item.related.gender == 0}}">
+          <view><text class="actor">女</text><text wx:if="{{item.related.age==null}}" class="actor">  0岁</text><text wx:else class="actor">  {{item.related.age}}岁</text></view>
+        </view>
+        <view wx:if="{{item.related.gender == 1}}">
+          <view><text class="actor">男</text><text wx:if="{{item.related.age==null}}" class="actor">  0岁</text><text wx:else class="actor">  {{item.related.age}}岁</text></view>
+        </view>
+      </view>
+      <view class="item-right">
+        <view><text class="score">{{item.title}}</text></view>
+        <view><text class="action">2018-04-10</text></view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<button bindtap="copyContect">复制内容</button>

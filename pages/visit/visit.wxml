@@ -1,0 +1,67 @@
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">待随访</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">医学确认</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">电子处方</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <swiper-item>
+      <view>
+          <scroll-view  scroll-y="true" style="height:100%" >
+              <view  wx:for="{{array}}">
+                <view  style="width:100%" class="flex item" data-gentle="{{item}}" bindtap="clickAndJump">
+                 <view class="item-left">
+                   <image id="{{index}}" mode="aspectFill" src="../../images/doctor.png" style="height:60px;width:60px;margin-top:20px"></image>
+                 </view>
+                 <view class="item-middle">
+                   <view  style="text-align: left;"><text class="title">{{item.patientName}}</text><text class="title">  {{item.projectName}}</text></view>
+                   <view  style="text-align: left;"><text class="sub-title">{{item.diseaseType}}</text></view>
+                   <view  style="text-align: left;"><text class="sub-title">{{item.gender}}</text><text  class="sub-title">  {{item.age}}</text></view>
+                 </view>
+                 <view class="item-right">
+                   <view><text>{{item.date}}</text></view>
+                 </view>
+                </view>
+              </view>
+          </scroll-view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view>
+          <scroll-view  scroll-y="true" style="height:100%" >
+              <view  wx:for="{{medicalArr}}" style="width:100%" class="flex item" data-gentle="{{item}}" bindtap="clickAndJump">
+                 <view class="item-left">
+                   <image id="{{index}}" mode="aspectFill" src="../../images/doctor.png" style="height:60px;width:60px;margin-top:20px"></image>
+                 </view>
+                 <view class="item-middle">
+                   <view  style="text-align: left;"><text class="title">{{item.patientName}}</text><text class="title">  {{item.projectName}}</text></view>
+                   <view  style="text-align: left;"><text class="sub-title">{{item.diseaseType}}</text></view>
+                   <view  style="text-align: left;"><text class="sub-title">{{item.gender}}</text><text  class="sub-title">  {{item.age}}</text></view>
+                 </view>
+                 <view class="item-right">
+                   <view><text>{{item.date}}</text></view>
+                 </view>
+              </view>
+          </scroll-view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view>
+          <scroll-view  scroll-y="true" style="height:100%" >
+              <view  wx:for="{{recipeArr}}" style="width:100%" class="flex item" data-gentle="{{item}}" bindtap="clickAndJump">
+                 <view class="item-left">
+                   <image id="{{index}}" mode="aspectFill" src="../../images/doctor.png" style="height:60px;width:60px;margin-top:20px"></image>
+                 </view>
+                 <view class="item-middle">
+                   <view  style="text-align: left;"><text class="title">{{item.patientName}}</text><text class="title">  {{item.projectName}}</text></view>
+                   <view  style="text-align: left;"><text class="sub-title">{{item.diseaseType}}</text></view>
+                   <view  style="text-align: left;"><text class="sub-title">{{item.gender}}</text><text  class="sub-title">  {{item.age}}</text></view>
+                 </view>
+                 <view class="item-right">
+                   <view><text>{{item.date}}</text></view>
+                 </view>
+              </view>
+          </scroll-view>
+      </view>
+    </swiper-item>
+</swiper>

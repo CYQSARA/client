@@ -1,0 +1,69 @@
+.flex
+{
+  display: flex;
+  width:100%;
+  height: 100px;
+}
+.item{
+  padding: 10px;
+  background-color: #fff;
+  color: #787878;
+}
+.item image
+{
+  margin-top:18px;
+  display: block;
+  overflow: hidden;
+  flex:1;
+}
+.item-middle
+{
+  display:inline-block;
+  margin-left:10px;
+  padding-top: 5px;
+  flex-grow:4;
+
+}
+.title
+{
+   margin-left:10px;
+   font-size:14px;
+   color:white;
+}
+.button
+{
+   margin-left:10px;
+   text-align:left;
+   width:150px;
+   font-size:14px;
+   color:red;
+   background:white;
+}
+.countStyle
+{
+   font-size:15px;
+   display:inline-block;
+   width:25%;
+   text-align:center;
+   color:white;
+}
+.mine-list{
+    display: block;
+    font-size:15px;
+}
+.everyColumn
+{
+    border-bottom: 0.2px solid  #CDCCD0;
+    display:flex;
+}
+.absolute-center-Y {
+	position: absolute;
+	margin-top:16px;
+}
+.img-small-icon {
+    width: 25rpx;
+    height: 35rpx;
+}
+.img-right-20 {
+	right: 20rpx;
+}

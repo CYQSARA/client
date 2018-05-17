@@ -1,0 +1,81 @@
+<view style="width:100%" class="flex item">
+   <view class="item-left">
+      <image mode="aspectFill" src="../../images/doctor.png" style="height:60px;width:60px;margin-top:20px"></image>
+   </view>
+   <view class="item-middle">
+      <view  style="text-align: left;"><text class="title">{{infoData.patientName}}</text><text class="title">  {{infoData.projectName}}</text></view>
+      <view  style="text-align: left;"><text class="sub-title">{{infoData.diseaseType}}</text></view>
+      <view  style="text-align: left;"><text class="sub-title">{{infoData.gender}}</text><text  class="sub-title">  {{infoData.age}}</text></view>
+   </view>
+   <view class="item-right">
+   <view><text>{{item.date}}</text></view>
+   </view>
+</view>
+
+<view class="block">
+    <view class="countStyle lineBorder">
+        <view><text>首次确诊时间</text></view>
+        <view>2017-09-09</view>
+    </view>
+    <view class="countStyle lineBorder">
+        <view><text>总治疗时间</text></view>
+        <view>6个月</view>
+    </view>
+    <view class="countStyle">
+        <view><text>开始服用剂量</text></view>
+        <view>400mg/天</view>
+    </view>
+</view>
+<view class="pro-block">
+  <text style="font-size:15px;line-height:1;margin-left:10px">医学材料复印件(血常规报告单)</text><switch style="float:right;height:15px;"></switch>
+  <scroll-view scroll-x="true">
+   <view class="uploadWrap" scroll-x="true" >
+    <view class="upload_Item" wx:for="{{imgArr}}" wx:key="id">
+     <image class="upload_Item_img" src="{{item}}"data-id="{{item.id}}" bindtap="clickSeeBig"></image>
+     <view style="font-size:15px;margin-left:5px;">2018-04-25</view>
+    </view>
+   </view>
+  </scroll-view>
+</view>
+
+<view class="pro-bg">
+ <view class="common-text">染色体/分子生物学检查结果</view>
+ <view class="borderBottom"></view>
+ <radio-group class="radio-group" bindchange="radioChange">
+   <label class="radio common-text" wx:for="{{btnArr}}">
+     <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+   </label>
+ </radio-group>
+</view>
+
+<view class="pro-bg">
+ <view class="common-text">格列卫治疗效果</view>
+ <view class="borderBottom"></view>
+ <radio-group class="radio-group" bindchange="radioChange">
+   <label class="radio common-text" wx:for="{{btnArr1}}">
+     <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+   </label>
+ </radio-group>
+</view>
+
+<view style="background:white;margin-top:15rpx;height:50px;">
+  <text class="common-text" style="display:inline-block;padding:15px 40rpx 10rpx 0rpx;">是否建议服用格列卫</text>
+  <switch style="float:right;padding:10px 0rpx 0rpx 1rpx;"></switch>
+</view>
+
+<view style="background:white;margin-top:15rpx;height:150px;width:100%;">
+ <view class="common-text">下阶段推荐剂量</view>
+ <view class="borderBottom"></view>
+ <radio-group class="radio-group" bindchange="radioChange">
+   <label class="radio_1 common-text" wx:for="{{btnArr2}}">
+     <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+   </label>
+ </radio-group>
+</view>
+<view  style="background:white;margin-top:15rpx;height:100px;width:100%;">
+   <textarea class="common-text" style="display:block;background:#f3f3f3;width:350px;height:70px;padding: 25rpx 2px;" placeholder="请填写医嘱"s/>
+</view>
+<view style="background:white;margin-top:15rpx;width:100%;height:60px;">
+    <button type="warn" style="padding:4px;">提交慈善总会项目办</button>
+</view>
+

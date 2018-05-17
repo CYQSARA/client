@@ -1,0 +1,15 @@
+<view class="pro_patient">
+  <view class="pro-left">
+    <image mode="aspectFill" src="../../../images/doctor.png" style="width:45px;height:45px"></image>
+  </view>
+  <view class="pro-right">
+    <view style="margin-top:10px;">
+      <text style="font-size:15px;">崔医生</text>
+      <text style="margin-left:200px;font-size:15px;">0次</text>
+    </view>
+    <view>
+      <text style="font-size:15px;">达希纳患者援助项目  24岁</text>
+      <text style = "font-size:15px;margin-left:58px;">违规次数</text>
+    </view>
+  </view>
+</view>

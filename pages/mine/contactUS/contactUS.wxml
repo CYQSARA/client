@@ -1,0 +1,13 @@
+<view>
+  <view style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-top:20px;">
+    <image src='../../../images/CCPAP-erweima-2.png' style="width:150px;height:150px;" ></image>
+    <text>扫一扫二维码下载</text>
+  </view>
+  <view style="display:flex;flex-direction:column;margin-top:20px;">
+    <view style="margin-left:60px;margin-top:10px;"><image src="../../../images/tele.png" style="width:24px;height:24px;position: absolute;" /><text style="margin-left:50px;" bindtap="teleAction">  400-606-1022</text></view>
+    <view style="margin-left:60px;margin-top:10px;"><image src="../../../images/mail.png" style="width:20px;height:20px;position: absolute;margin-top:3px;" /><text style="margin-left:50px;" bindtap="mailAction">  glw.ccfpap.org@163.com</text></view>
+    <view style="margin-left:60px;margin-top:10px;"><image src="../../../images/add.png" style="width:20px;height:20px;position: absolute;margin-top:3px;" /><text style="margin-left:50px;" bindtap="addressAction">  https://www.gipap.org.cn</text></view>
+  </view>
+</view>
+<view style="font-size:15px;margin-top:180px;display:flex;align-items:center;justify-content:center">当前版本: 3.7.6</view>
+<view style="font-size:15px;margin-right:10px;margin-left:10px;margin-top:10px;display:flex;align-items:center;justify-content:center;text-align:center;">北京市100034信箱21号分箱中华慈善总会患者援助项目</view>

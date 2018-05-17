@@ -1,0 +1,28 @@
+<view class="page_row" bindtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size='20' type="search"></icon>
+      <input class="pro_input" placeholder="请输入关键字"></input>
+    </view>
+  </view>
+</view>
+<view class="pg_container">
+  <button class="pg_item">全部</button>
+  <button class="pg_item">援助中</button>
+  <button class="pg_item">援助暂停</button>
+</view>
+<view class="pro_patient" wx:for="{{patientArr}}">
+  <view class="pro-left">
+    <image mode="aspectFill" src="../../../images/doctor.png" style="width:45px;height:45px"></image>
+  </view>
+  <view class="pro-right">
+    <view style="margin-top:10px;">
+      <text style="font-size:15px;">{{item.name}}</text>
+      <text style="margin-left:200px;font-size:15px;">援助中</text>
+    </view>
+    <view>
+      <text style="font-size:15px;">女  54岁</text>
+      <text style = "font-size:15px;margin-left:20px;">{{item.address}}</text>
+    </view>
+  </view>
+</view>

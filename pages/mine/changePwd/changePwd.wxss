@@ -1,0 +1,15 @@
+.pro_bd
+{
+  margin-left:20px;
+  margin-top:20px;
+  margin-right:20px;
+  height:50px;
+  background:#fff;
+}
+.pro_text
+{
+  font-size:15px;
+  color:gray;
+  text-align:center;
+  padding:11px;
+}
